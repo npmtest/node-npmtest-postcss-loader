@@ -1,7 +1,5 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <title>Code coverage report for node-npmtest-postcss-loader/postcss-loader/index.js</title>
+<html lang="en"><head>
+    <title>Code coverage report for node-npmtest-postcss-loader/node_modules/postcss-loader/index.js</title>
     <meta charset="utf-8">
     <style>
         body, html {
@@ -194,7 +192,7 @@
     <h1 style="font-weight: bold;">
         <a href="https://github.com/npmtest/node-npmtest-postcss-loader">npmtest-postcss-loader (v0.0.1)</a>
     </h1>
-    <h1>Code coverage report for <span class="entity">node-npmtest-postcss-loader/postcss-loader/index.js</span></h1>
+    <h1>Code coverage report for <span class="entity">node-npmtest-postcss-loader/node_modules/postcss-loader/index.js</span></h1>
     <h2>
         
         Statements: <span class="metric">9.3% <small>(8 / 86)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
@@ -210,11 +208,11 @@
         
         Ignored: <span class="metric"><span class="ignore-none">none</span></span> &nbsp;&nbsp;&nbsp;&nbsp;
     </h2>
-    <div class="path"><a href="../../index.html">All files</a> &#187; <a href="index.html">node-npmtest-postcss-loader/postcss-loader/</a> &#187; index.js</div>
+    <div class="path"><a href="../../../index.html">All files</a> » <a href="index.html">node-npmtest-postcss-loader/node_modules/postcss-loader/</a> » index.js</div>
 </div>
 <div class="body">
 <pre><table class="coverage">
-<tr><td class="line-count">1
+<tbody><tr><td class="line-count">1
 2
 3
 4
@@ -526,79 +524,79 @@ var path        = require('path');
 &nbsp;
 var PostCSSLoaderError = require('./error');
 &nbsp;
-<span class="fstat-no" title="function not covered" >function parseOptions(options, pack) {</span>
-<span class="cstat-no" title="statement not covered" >    if ( typeof options === 'function' ) {</span>
-<span class="cstat-no" title="statement not covered" >        options = options.call(this, this);</span>
+<span class="fstat-no" title="function not covered">function parseOptions(options, pack) {</span>
+<span class="cstat-no" title="statement not covered">    if ( typeof options === 'function' ) {</span>
+<span class="cstat-no" title="statement not covered">        options = options.call(this, this);</span>
     }
 &nbsp;
-<span class="cstat-no" title="statement not covered" >    var plugins;</span>
-<span class="cstat-no" title="statement not covered" >    if ( typeof options === 'undefined') {</span>
-<span class="cstat-no" title="statement not covered" >        plugins = [];</span>
-    } else <span class="cstat-no" title="statement not covered" >if ( Array.isArray(options) ) {</span>
-<span class="cstat-no" title="statement not covered" >        plugins = options;</span>
+<span class="cstat-no" title="statement not covered">    var plugins;</span>
+<span class="cstat-no" title="statement not covered">    if ( typeof options === 'undefined') {</span>
+<span class="cstat-no" title="statement not covered">        plugins = [];</span>
+    } else <span class="cstat-no" title="statement not covered">if ( Array.isArray(options) ) {</span>
+<span class="cstat-no" title="statement not covered">        plugins = options;</span>
     } else {
-<span class="cstat-no" title="statement not covered" >        plugins = options.plugins || options.defaults;</span>
+<span class="cstat-no" title="statement not covered">        plugins = options.plugins || options.defaults;</span>
     }
 &nbsp;
-<span class="cstat-no" title="statement not covered" >    if ( pack ) {</span>
-<span class="cstat-no" title="statement not covered" >        plugins = options[pack];</span>
-<span class="cstat-no" title="statement not covered" >        if ( !plugins ) {</span>
-<span class="cstat-no" title="statement not covered" >            throw new Error('PostCSS plugin pack is not defined in options');</span>
+<span class="cstat-no" title="statement not covered">    if ( pack ) {</span>
+<span class="cstat-no" title="statement not covered">        plugins = options[pack];</span>
+<span class="cstat-no" title="statement not covered">        if ( !plugins ) {</span>
+<span class="cstat-no" title="statement not covered">            throw new Error('PostCSS plugin pack is not defined in options');</span>
         }
     }
 &nbsp;
-<span class="cstat-no" title="statement not covered" >    var opts = { };</span>
-<span class="cstat-no" title="statement not covered" >    if ( typeof options !== 'undefined' ) {</span>
-<span class="cstat-no" title="statement not covered" >        opts.stringifier = options.stringifier;</span>
-<span class="cstat-no" title="statement not covered" >        opts.parser      = options.parser;</span>
-<span class="cstat-no" title="statement not covered" >        opts.syntax      = options.syntax;</span>
+<span class="cstat-no" title="statement not covered">    var opts = { };</span>
+<span class="cstat-no" title="statement not covered">    if ( typeof options !== 'undefined' ) {</span>
+<span class="cstat-no" title="statement not covered">        opts.stringifier = options.stringifier;</span>
+<span class="cstat-no" title="statement not covered">        opts.parser      = options.parser;</span>
+<span class="cstat-no" title="statement not covered">        opts.syntax      = options.syntax;</span>
     }
 &nbsp;
-<span class="cstat-no" title="statement not covered" >    var exec = options &amp;&amp; options.exec;</span>
-<span class="cstat-no" title="statement not covered" >    return Promise.resolve({ options: opts, plugins: plugins, exec: exec });</span>
+<span class="cstat-no" title="statement not covered">    var exec = options &amp;&amp; options.exec;</span>
+<span class="cstat-no" title="statement not covered">    return Promise.resolve({ options: opts, plugins: plugins, exec: exec });</span>
 }
 &nbsp;
-module.exports = <span class="fstat-no" title="function not covered" >function (source, map) {</span>
-<span class="cstat-no" title="statement not covered" >    if ( this.cacheable ) <span class="cstat-no" title="statement not covered" >this.cacheable();</span></span>
+module.exports = <span class="fstat-no" title="function not covered">function (source, map) {</span>
+<span class="cstat-no" title="statement not covered">    if ( this.cacheable ) <span class="cstat-no" title="statement not covered">this.cacheable();</span></span>
 &nbsp;
-<span class="cstat-no" title="statement not covered" >    var loader = this;</span>
-<span class="cstat-no" title="statement not covered" >    var file   = loader.resourcePath;</span>
-<span class="cstat-no" title="statement not covered" >    var params = loaderUtils.getOptions(loader) || {};</span>
+<span class="cstat-no" title="statement not covered">    var loader = this;</span>
+<span class="cstat-no" title="statement not covered">    var file   = loader.resourcePath;</span>
+<span class="cstat-no" title="statement not covered">    var params = loaderUtils.getOptions(loader) || {};</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered" >    var options  = params.plugins || loader.options.postcss;</span>
-<span class="cstat-no" title="statement not covered" >    var pack     = params.pack;</span>
-<span class="cstat-no" title="statement not covered" >    var callback = loader.async();</span>
+<span class="cstat-no" title="statement not covered">    var options  = params.plugins || loader.options.postcss;</span>
+<span class="cstat-no" title="statement not covered">    var pack     = params.pack;</span>
+<span class="cstat-no" title="statement not covered">    var callback = loader.async();</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered" >    var configPath;</span>
+<span class="cstat-no" title="statement not covered">    var configPath;</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered" >    if (params.config) {</span>
-<span class="cstat-no" title="statement not covered" >        if (path.isAbsolute(params.config)) {</span>
-<span class="cstat-no" title="statement not covered" >            configPath = params.config;</span>
+<span class="cstat-no" title="statement not covered">    if (params.config) {</span>
+<span class="cstat-no" title="statement not covered">        if (path.isAbsolute(params.config)) {</span>
+<span class="cstat-no" title="statement not covered">            configPath = params.config;</span>
         } else {
-<span class="cstat-no" title="statement not covered" >            configPath = path.join(process.cwd(), params.config);</span>
+<span class="cstat-no" title="statement not covered">            configPath = path.join(process.cwd(), params.config);</span>
         }
     } else {
-<span class="cstat-no" title="statement not covered" >        configPath = path.dirname(file);</span>
+<span class="cstat-no" title="statement not covered">        configPath = path.dirname(file);</span>
     }
 &nbsp;
-<span class="cstat-no" title="statement not covered" >    Promise.resolve().then(<span class="fstat-no" title="function not covered" >function () {</span></span>
-<span class="cstat-no" title="statement not covered" >        if ( typeof options !== 'undefined' ) {</span>
-<span class="cstat-no" title="statement not covered" >            return parseOptions.call(loader, options, pack);</span>
+<span class="cstat-no" title="statement not covered">    Promise.resolve().then(<span class="fstat-no" title="function not covered">function () {</span></span>
+<span class="cstat-no" title="statement not covered">        if ( typeof options !== 'undefined' ) {</span>
+<span class="cstat-no" title="statement not covered">            return parseOptions.call(loader, options, pack);</span>
         } else {
-<span class="cstat-no" title="statement not covered" >            if ( pack ) {</span>
-<span class="cstat-no" title="statement not covered" >                throw new Error('PostCSS plugin pack is supported ' +</span>
+<span class="cstat-no" title="statement not covered">            if ( pack ) {</span>
+<span class="cstat-no" title="statement not covered">                throw new Error('PostCSS plugin pack is supported ' +</span>
                                 'only when use plugins in webpack config');
             }
-<span class="cstat-no" title="statement not covered" >            return loadConfig({ webpack: loader }, configPath, { argv: false });</span>
+<span class="cstat-no" title="statement not covered">            return loadConfig({ webpack: loader }, configPath, { argv: false });</span>
         }
-    }).then(<span class="fstat-no" title="function not covered" >function (config) {</span>
-<span class="cstat-no" title="statement not covered" >        if ( !config ) <span class="cstat-no" title="statement not covered" >config = { };</span></span>
+    }).then(<span class="fstat-no" title="function not covered">function (config) {</span>
+<span class="cstat-no" title="statement not covered">        if ( !config ) <span class="cstat-no" title="statement not covered">config = { };</span></span>
 &nbsp;
-<span class="cstat-no" title="statement not covered" >        if ( config.file ) <span class="cstat-no" title="statement not covered" >loader.addDependency(config.file);</span></span>
+<span class="cstat-no" title="statement not covered">        if ( config.file ) <span class="cstat-no" title="statement not covered">loader.addDependency(config.file);</span></span>
 &nbsp;
-<span class="cstat-no" title="statement not covered" >        var plugins = config.plugins || [];</span>
+<span class="cstat-no" title="statement not covered">        var plugins = config.plugins || [];</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered" >        var opts  = assign({}, config.options, {</span>
+<span class="cstat-no" title="statement not covered">        var opts  = assign({}, config.options, {</span>
             from: file,
             to:   file,
             map:  {
@@ -607,74 +605,75 @@ module.exports = <span class="fstat-no" title="function not covered" >function (
             }
         });
 &nbsp;
-<span class="cstat-no" title="statement not covered" >        if ( typeof map === 'string' ) <span class="cstat-no" title="statement not covered" >map = JSON.parse(map);</span></span>
-<span class="cstat-no" title="statement not covered" >        if ( map &amp;&amp; map.mappings ) <span class="cstat-no" title="statement not covered" >opts.map.prev = map;</span></span>
+<span class="cstat-no" title="statement not covered">        if ( typeof map === 'string' ) <span class="cstat-no" title="statement not covered">map = JSON.parse(map);</span></span>
+<span class="cstat-no" title="statement not covered">        if ( map &amp;&amp; map.mappings ) <span class="cstat-no" title="statement not covered">opts.map.prev = map;</span></span>
 &nbsp;
-<span class="cstat-no" title="statement not covered" >        if ( params.syntax ) {</span>
-<span class="cstat-no" title="statement not covered" >            if ( typeof params.syntax === 'string' ) {</span>
-<span class="cstat-no" title="statement not covered" >                opts.syntax = require(params.syntax);</span>
+<span class="cstat-no" title="statement not covered">        if ( params.syntax ) {</span>
+<span class="cstat-no" title="statement not covered">            if ( typeof params.syntax === 'string' ) {</span>
+<span class="cstat-no" title="statement not covered">                opts.syntax = require(params.syntax);</span>
             } else {
-<span class="cstat-no" title="statement not covered" >                opts.syntax = params.syntax;</span>
+<span class="cstat-no" title="statement not covered">                opts.syntax = params.syntax;</span>
             }
         }
-<span class="cstat-no" title="statement not covered" >        if ( params.parser ) {</span>
-<span class="cstat-no" title="statement not covered" >            if ( typeof params.parser === 'string' ) {</span>
-<span class="cstat-no" title="statement not covered" >                opts.parser = require(params.parser);</span>
+<span class="cstat-no" title="statement not covered">        if ( params.parser ) {</span>
+<span class="cstat-no" title="statement not covered">            if ( typeof params.parser === 'string' ) {</span>
+<span class="cstat-no" title="statement not covered">                opts.parser = require(params.parser);</span>
             } else {
-<span class="cstat-no" title="statement not covered" >                opts.parser = params.parser;</span>
+<span class="cstat-no" title="statement not covered">                opts.parser = params.parser;</span>
             }
         }
-<span class="cstat-no" title="statement not covered" >        if ( params.stringifier ) {</span>
-<span class="cstat-no" title="statement not covered" >            if ( typeof params.stringifier === 'string' ) {</span>
-<span class="cstat-no" title="statement not covered" >                opts.stringifier = require(params.stringifier);</span>
+<span class="cstat-no" title="statement not covered">        if ( params.stringifier ) {</span>
+<span class="cstat-no" title="statement not covered">            if ( typeof params.stringifier === 'string' ) {</span>
+<span class="cstat-no" title="statement not covered">                opts.stringifier = require(params.stringifier);</span>
             } else {
-<span class="cstat-no" title="statement not covered" >                opts.stringifier = params.stringifier;</span>
+<span class="cstat-no" title="statement not covered">                opts.stringifier = params.stringifier;</span>
             }
         }
 &nbsp;
-<span class="cstat-no" title="statement not covered" >        var exec = params.exec || config.exec;</span>
-<span class="cstat-no" title="statement not covered" >        if ( params.parser === 'postcss-js' || exec ) {</span>
-<span class="cstat-no" title="statement not covered" >            source = loader.exec(source, loader.resource);</span>
+<span class="cstat-no" title="statement not covered">        var exec = params.exec || config.exec;</span>
+<span class="cstat-no" title="statement not covered">        if ( params.parser === 'postcss-js' || exec ) {</span>
+<span class="cstat-no" title="statement not covered">            source = loader.exec(source, loader.resource);</span>
         }
 &nbsp;
         // Allow plugins to add or remove postcss plugins
-<span class="cstat-no" title="statement not covered" >        if ( loader._compilation ) {</span>
-<span class="cstat-no" title="statement not covered" >            plugins = loader._compilation.applyPluginsWaterfall(</span>
+<span class="cstat-no" title="statement not covered">        if ( loader._compilation ) {</span>
+<span class="cstat-no" title="statement not covered">            plugins = loader._compilation.applyPluginsWaterfall(</span>
               'postcss-loader-before-processing',
               [].concat(plugins),
               params
             );
         }
 &nbsp;
-<span class="cstat-no" title="statement not covered" >        return postcss(plugins).process(source, opts).then(<span class="fstat-no" title="function not covered" >function (result) {</span></span>
-<span class="cstat-no" title="statement not covered" >            result.warnings().forEach(<span class="fstat-no" title="function not covered" >function (msg) {</span></span>
-<span class="cstat-no" title="statement not covered" >                loader.emitWarning(msg.toString());</span>
+<span class="cstat-no" title="statement not covered">        return postcss(plugins).process(source, opts).then(<span class="fstat-no" title="function not covered">function (result) {</span></span>
+<span class="cstat-no" title="statement not covered">            result.warnings().forEach(<span class="fstat-no" title="function not covered">function (msg) {</span></span>
+<span class="cstat-no" title="statement not covered">                loader.emitWarning(msg.toString());</span>
             });
 &nbsp;
-<span class="cstat-no" title="statement not covered" >            result.messages.forEach(<span class="fstat-no" title="function not covered" >function (msg) {</span></span>
-<span class="cstat-no" title="statement not covered" >                if ( msg.type === 'dependency' ) {</span>
-<span class="cstat-no" title="statement not covered" >                    loader.addDependency(msg.file);</span>
+<span class="cstat-no" title="statement not covered">            result.messages.forEach(<span class="fstat-no" title="function not covered">function (msg) {</span></span>
+<span class="cstat-no" title="statement not covered">                if ( msg.type === 'dependency' ) {</span>
+<span class="cstat-no" title="statement not covered">                    loader.addDependency(msg.file);</span>
                 }
             });
 &nbsp;
-<span class="cstat-no" title="statement not covered" >            var resultMap = result.map ? result.map.toJSON() : null;</span>
-<span class="cstat-no" title="statement not covered" >            callback(null, result.css, resultMap);</span>
-<span class="cstat-no" title="statement not covered" >            return null;</span>
+<span class="cstat-no" title="statement not covered">            var resultMap = result.map ? result.map.toJSON() : null;</span>
+<span class="cstat-no" title="statement not covered">            callback(null, result.css, resultMap);</span>
+<span class="cstat-no" title="statement not covered">            return null;</span>
         });
-    }).catch(<span class="fstat-no" title="function not covered" >function (error) {</span>
-<span class="cstat-no" title="statement not covered" >        if ( error.name === 'CssSyntaxError' ) {</span>
-<span class="cstat-no" title="statement not covered" >            callback(new PostCSSLoaderError(error));</span>
+    }).catch(<span class="fstat-no" title="function not covered">function (error) {</span>
+<span class="cstat-no" title="statement not covered">        if ( error.name === 'CssSyntaxError' ) {</span>
+<span class="cstat-no" title="statement not covered">            callback(new PostCSSLoaderError(error));</span>
         } else {
-<span class="cstat-no" title="statement not covered" >            callback(error);</span>
+<span class="cstat-no" title="statement not covered">            callback(error);</span>
         }
     });
 };
 &nbsp;
 &nbsp;</pre></td></tr>
-</table></pre>
+</tbody></table></pre>
 </div>
 <div class="footer">
-    <div class="meta">Generated by <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a> at Tue Apr 11 2017 16:38:42 GMT+0000 (UTC)</div>
+    <div class="meta">Generated by <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a> at Mon Apr 17 2017 21:38:12 GMT+0000 (UTC)</div>
 </div>
-</body>
-</html>
+
+
+</body></html>
