@@ -23,16 +23,16 @@
 <tspan x="10" y="330">  │ └─┬ supports-color@3.2.3 </tspan>
 <tspan x="10" y="346">  │   └── has-flag@1.0.0 </tspan>
 <tspan x="10" y="362">  └─┬ postcss-load-config@1.2.0 </tspan>
-<tspan x="10" y="378">    ├─┬ cosmiconfig@2.1.1 </tspan>
-<tspan x="10" y="394">    │ ├─┬ js-yaml@3.8.3 </tspan>
-<tspan x="10" y="410">    │ │ ├─┬ argparse@1.0.9 </tspan>
-<tspan x="10" y="426">    │ │ │ └── sprintf-js@1.0.3 </tspan>
-<tspan x="10" y="442">    │ │ └── esprima@3.1.3 </tspan>
-<tspan x="10" y="458">    │ ├── minimist@1.2.0 </tspan>
-<tspan x="10" y="474">    │ ├── os-homedir@1.0.2 </tspan>
-<tspan x="10" y="490">    │ ├─┬ parse-json@2.2.0 </tspan>
-<tspan x="10" y="506">    │ │ └─┬ error-ex@1.3.1 </tspan>
-<tspan x="10" y="522">    │ │   └── is-arrayish@0.2.1 </tspan>
+<tspan x="10" y="378">    ├─┬ cosmiconfig@2.1.2 </tspan>
+<tspan x="10" y="394">    │ ├── is-directory@0.3.1 </tspan>
+<tspan x="10" y="410">    │ ├─┬ js-yaml@3.8.3 </tspan>
+<tspan x="10" y="426">    │ │ ├─┬ argparse@1.0.9 </tspan>
+<tspan x="10" y="442">    │ │ │ └── sprintf-js@1.0.3 </tspan>
+<tspan x="10" y="458">    │ │ └── esprima@3.1.3 </tspan>
+<tspan x="10" y="474">    │ ├─┬ json-parse-helpfulerror@1.0.3 </tspan>
+<tspan x="10" y="490">    │ │ └── jju@1.3.0 </tspan>
+<tspan x="10" y="506">    │ ├── minimist@1.2.0 </tspan>
+<tspan x="10" y="522">    │ ├── os-homedir@1.0.2 </tspan>
 <tspan x="10" y="538">    │ └── require-from-string@1.2.1 </tspan>
 <tspan x="10" y="554">    ├── postcss-load-options@1.2.0 </tspan>
 <tspan x="10" y="570">    └── postcss-load-plugins@2.3.0</tspan>
